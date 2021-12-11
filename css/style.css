@@ -7,6 +7,10 @@ Author: Hernan - Stream Smart Finance
     src: url(../fonts/Pixeled.ttf);
 }
 
+* {
+	cursor: none;
+}
+
 body{
     background-color: black;
 	line-height: 1.6;
@@ -47,4 +51,5 @@ p{
     width: 150px;
     height: 150px;
     background-size: cover;
+	position: absolute;
 }
