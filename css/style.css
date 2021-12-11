@@ -1,0 +1,50 @@
+/*
+Author: Hernan - Stream Smart Finance
+*/
+
+@font-face {
+    font-family: Pixeled;
+    src: url(/fonts/Pixeled.ttf);
+}
+
+body{
+    background-color: black;
+	line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    color: #6F8BA4;
+    font-weight: 400;
+	background-size: cover;
+    height: 100vh;
+}
+
+p{
+    font-family: Pixeled;
+    color: white;
+}
+
+.vh98{
+	height: 98vh;
+}
+
+.cvertical{
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.but1{
+    height: 80px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-variant: all-petite-caps;
+    letter-spacing: 3px;
+}
+
+.logo{
+	background: url(../images/pix-pxi.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
