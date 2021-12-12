@@ -31,12 +31,11 @@ body{
 }
 
 .but1{
-    height: 80px;
+	height: 80px;
     margin-bottom: 15px;
-    font-size: 35px;
-    font-variant: all-petite-caps;
+    font-size: 20px;
     letter-spacing: 3px;
-	font-family: 'Pixeled';
+    font-family: 'Pixeled';
 }
 
 html, body {
@@ -68,7 +67,7 @@ description {
 }
 
 .disable {
-    font-size: 17px;
+    font-size: 15px;
     cursor: pointer!important;
     font-family: 'Pixeled';
 }
