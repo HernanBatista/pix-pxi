@@ -42,7 +42,7 @@ body{
 html, body {
   margin: 0;
   padding: 0;
-  background: #111;
+  background: #000;
   color: #fff;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   -webkit-user-select: none;
