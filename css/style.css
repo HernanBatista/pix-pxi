@@ -1,14 +1,11 @@
-/*
-Author: Hernan - Stream Smart Finance
-*/
-
+/* Best with even numbers */
 @font-face {
     font-family: Pixeled;
     src: url(../fonts/Pixeled.ttf);
 }
 
 * {
-	cursor: none;
+  cursor: none !important;
 }
 
 body{
@@ -21,11 +18,6 @@ body{
     font-weight: 400;
 	background-size: cover;
     height: 100vh;
-}
-
-p{
-    font-family: Pixeled;
-    color: white;
 }
 
 .vh98{
@@ -44,12 +36,69 @@ p{
     font-size: 35px;
     font-variant: all-petite-caps;
     letter-spacing: 3px;
+	font-family: 'Pixeled';
 }
 
-.logo{
-	background: url(../images/pix-pxi.png);
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-	position: absolute;
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+description {
+  display: block;
+  padding: 25px;
+  color: #333;
+  font-size: 40px;
+  font-style: italic;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  z-index: 999999;
+  
+}
+
+.disable {
+    font-size: 17px;
+    cursor: pointer!important;
+    font-family: 'Pixeled';
+}
+#disable{
+	cursor: pointer!important;
+    width: 30px;
+    height: 18px;
+}
+
+#space-invader,
+.space-laser {
+  font-size: 4px;
+}
+
+#space-invader {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  margin: -3.5em 0 0 -6.5em;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  background: url(../images/pix-pxi.png);
+  background-size: contain;
+}
+
+.space-laser {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  z-index: 9998;
+  box-shadow: 0 0 0 0.5em white, 0 1em 0 0.5em white, 0 2em 0 0.5em white;
 }
