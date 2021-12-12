@@ -20,6 +20,10 @@ body{
     height: 100vh;
 }
 
+#video{
+	position: absolute;
+}
+
 .vh98{
 	height: 98vh;
 }
@@ -41,7 +45,7 @@ body{
 html, body {
   margin: 0;
   padding: 0;
-  background: #000;
+  background: #525ca5;
   color: #fff;
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   -webkit-user-select: none;
