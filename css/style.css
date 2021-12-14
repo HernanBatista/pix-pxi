@@ -22,6 +22,7 @@ body{
 
 #video{
 	position: absolute;
+	object-fit: cover;
 }
 
 .vh98{
@@ -74,11 +75,13 @@ description {
     font-size: 15px;
     cursor: pointer!important;
     font-family: 'Pixeled';
+	color: #ffffff33;
 }
 #disable{
 	cursor: pointer!important;
     width: 30px;
     height: 18px;
+	opacity: 0.5;
 }
 
 #space-invader,
