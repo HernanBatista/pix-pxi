@@ -44,11 +44,10 @@ body{
 }
 
 .but2{
-  height: 9vh;
   width: 100%;
   background: #282828;
   border-radius: 5px;
-  padding: 7px;
+  padding: 14px;
   position: relative;
   z-index: 9999;
   font-family: 'Pixeled';
