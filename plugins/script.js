@@ -28,22 +28,55 @@ $(function(){
     var pos = invader.position();
     var top = pos.top + parseInt( invader.css('margin-top') ) + (size * 8);
     var left = pos.left;
-    
-    laser
-    .css({
-      top: top + 'px',
-      left: 48 +left + 'px'
-    })
-    .appendTo( 'body' )
-    .velocity({
-      top: '0px',
-    }, function(){
-      laser.remove();
-    });
+    var hov = $('#hov');
+    var bt1 = $('#bt1');
+    //console.log(pos.top)
+
+    // $('#hov').on('mouseover', function(){
+    //   intv = setInterval( function(){
+    //     laser.remove(); 
+    //   }, 500);
+    // });
+    var hv = document.querySelector("#hov")
+    hvmin = hv.getBoundingClientRect().left
+    hvmax = hvmin+hv.getBoundingClientRect().width
+    console.log(`hvmin ${hvmin} / hvmax ${hvmax}`)
+
+    if(left > hvmin && left < hvmax){
+      laser
+      .css({
+        top: top + 'px',
+        left: 48 +left + 'px'
+      })
+      .appendTo( 'body' )
+      .velocity({
+        top: '110px'
+      }, function(){
+        laser.remove();
+      });
+
+       hov.click(function(){
+         bt1.addClass('wht')
+       })
+
+    }else{
+      laser
+      .css({
+        top: top + 'px',
+        left: 48 +left + 'px'
+      })
+      .appendTo( 'body' )
+      .velocity({
+        top: '20px'
+      }, function(){
+        laser.remove();
+      });
+    }
     
     if( !disable.checked ){
       laserSound();
     }
+
   };
   
   $(document)
@@ -51,7 +84,7 @@ $(function(){
     invader
     .css({
       'top': e.clientY + 'px',
-      'left': e.clientX + 'px'
+      'left': -50+ e.clientX + 'px'
     });
   })
   .on( 'mousedown' , function( e ){
@@ -63,7 +96,8 @@ $(function(){
       intervalTimer = setInterval( function(){
         shootLaser(e);
       }, 1000/8 ); // 10 lasers per second
-    }, 75 );
+    }, 100 );
+
   })
   .on( 'mouseup' , function(){
     if (timeoutTimer !== null) {
