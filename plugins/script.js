@@ -42,7 +42,7 @@ $(function(){
     hvmax = hvmin+hv.getBoundingClientRect().width
     console.log(`hvmin ${hvmin} / hvmax ${hvmax}`)
 
-    if(left > hvmin && left < hvmax){
+    if(left > hvmin-50 && left < hvmax-50){
       laser
       .css({
         top: top + 'px',
@@ -55,9 +55,11 @@ $(function(){
         laser.remove();
       });
 
-       hov.click(function(){
-         bt1.addClass('wht')
-       })
+      hov.click(function(){
+        bt1.addClass('wht')
+        setTimeout(function(){bt1.click();}, 1700);
+        setTimeout(function(){bt1.removeClass('wht');}, 2000);
+      })
 
     }else{
       laser
@@ -89,14 +91,6 @@ $(function(){
   })
   .on( 'mousedown' , function( e ){
     shootLaser( e );
-    
-    timeoutTimer = setTimeout( function(){
-      timeoutTimer = null;
-      
-      intervalTimer = setInterval( function(){
-        shootLaser(e);
-      }, 1000/8 ); // 10 lasers per second
-    }, 100 );
 
   })
   .on( 'mouseup' , function(){

@@ -13,6 +13,45 @@
 
 </head>
 <body>
+
+		<!-- Modal -->
+		<div class="modal fade pce" id="streamModal" tabindex="-1" aria-labelledby="streamModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="streamModalLabel">Teste</h5>
+						<button type="button" class="btnclose" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+					</div>
+					<div class="modal-body">
+						<!-- Enter button -->
+						<div id="enter" hidden>
+							<div class="container">
+								<h3 class="text-white h4 text-center mb-4">Download our demo and enjoy a piece of the Metaverse we´re building to you.</h3>
+								<div class="row text-center">
+									<!-- AppStore e PlayStore MOBILE VERSION (first) -->
+									<div id="mob" hidden>
+									</div>
+									<div class="col">
+									
+									</div>
+								</div>
+								<!-- AppStore e PlayStore PC VERSION -->
+								<div id="pce" hidden>
+								</div>
+							</div>
+						</div>
+						<div id="others" hidden>
+							<h3 class="subtitle is-5 text-center text-white">Coming soon..</h3>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 	<!-- <div id="particles-js" class="vh98 position-absolute"></div> -->
 	<video id="video" width="100%" height="100%" autoplay muted="" loop="">
 		<source src="video/fundo.mp4" type="video/mp4">
@@ -26,12 +65,12 @@
 			<div class="row">
 				<div class="col">
 					<div class="invis"></div>
-					<div id="bt1" class="but2"><p>Wings of Victory</p></div>
+					<div id="bt1" class="but2" data-bs-toggle="modal" data-bs-target="#streamModal" data-bs-whatever="ENTER"><p>Home</p></div>
 					<div id="hov" class="invis2"></div>
 				</div>
 				<div class="col">
 					<div class="invis"></div>
-					<div class="but2"><p>Wings of Victory</p></div>
+					<div class="but2" data-bs-toggle="modal" data-bs-target="#streamModal" data-bs-whatever="ROADMAP"><p>Roadmap</p></div>
 				</div>
 				<div class="col">
 					<div class="invis"></div>
@@ -56,11 +95,11 @@
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.min.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="plugins/script.js"></script>
 	<script src="plugins/particles.js/particles.js"></script>
 	<script src="plugins/particles.js/app.js"></script>	
-	<script src="plugins/script.js"></script>
-	<!-- <script src="plugins/yt.js"></script>-->
+	<script src="plugins/modal.js"></script>
 
 </body>
 </html>
