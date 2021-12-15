@@ -28,37 +28,19 @@ $(function(){
     var pos = invader.position();
     var top = pos.top + parseInt( invader.css('margin-top') ) + (size * 8);
     var left = pos.left;
-
-
     var hov = $('#hov');
     var bt1 = $('#bt1');
+    //console.log(pos.top)
+
+    // $('#hov').on('mouseover', function(){
+    //   intv = setInterval( function(){
+    //     laser.remove(); 
+    //   }, 500);
+    // });
     var hv = document.querySelector("#hov")
     hvmin = hv.getBoundingClientRect().left
     hvmax = hvmin+hv.getBoundingClientRect().width
-
-    var hov2 = $('#hov2');
-    var bt2 = $('#bt2');
-    var hv2 = document.querySelector("#hov2")
-    hvmin2 = hv2.getBoundingClientRect().left
-    hvmax2 = hvmin2+hv2.getBoundingClientRect().width
-
-    var hov3 = $('#hov3');
-    var bt3 = $('#bt3');
-    var hv3 = document.querySelector("#hov3")
-    hvmin3 = hv3.getBoundingClientRect().left
-    hvmax3 = hvmin3+hv3.getBoundingClientRect().width
-
-    var hov4 = $('#hov4');
-    var bt4 = $('#bt4');
-    var hv4 = document.querySelector("#hov4")
-    hvmin4 = hv4.getBoundingClientRect().left
-    hvmax4 = hvmin4+hv4.getBoundingClientRect().width
-
-    var hov5 = $('#hov5');
-    var bt5 = $('#bt5');
-    var hv5 = document.querySelector("#hov5")
-    hvmin5 = hv5.getBoundingClientRect().left
-    hvmax5 = hvmin5+hv5.getBoundingClientRect().width
+    console.log(`hvmin ${hvmin} / hvmax ${hvmax}`)
 
     if(left > hvmin-50 && left < hvmax-50){
       laser
@@ -79,78 +61,6 @@ $(function(){
         setTimeout(function(){bt1.removeClass('wht');}, 2000);
       })
 
-    }else if(left > hvmin2-50 && left < hvmax2-50){
-      laser
-      .css({
-        top: top + 'px',
-        left: 48 +left + 'px'
-      })
-      .appendTo( 'body' )
-      .velocity({
-        top: '110px'
-      }, function(){
-        laser.remove();
-      });
-
-      hov2.click(function(){
-        bt2.addClass('wht')
-        setTimeout(function(){bt2.click();}, 1700);
-        setTimeout(function(){bt2.removeClass('wht');}, 2000);
-      })
-    }else if(left > hvmin3-50 && left < hvmax3-50){
-      laser
-      .css({
-        top: top + 'px',
-        left: 48 +left + 'px'
-      })
-      .appendTo( 'body' )
-      .velocity({
-        top: '110px'
-      }, function(){
-        laser.remove();
-      });
-
-      hov3.click(function(){
-        bt3.addClass('wht')
-        setTimeout(function(){bt3.click();}, 1700);
-        setTimeout(function(){bt3.removeClass('wht');}, 2000);
-      })
-    }else if(left > hvmin4-50 && left < hvmax4-50){
-      laser
-      .css({
-        top: top + 'px',
-        left: 48 +left + 'px'
-      })
-      .appendTo( 'body' )
-      .velocity({
-        top: '110px'
-      }, function(){
-        laser.remove();
-      });
-
-      hov4.click(function(){
-        bt4.addClass('wht')
-        setTimeout(function(){bt4.click();}, 1700);
-        setTimeout(function(){bt4.removeClass('wht');}, 2000);
-      })
-    }else if(left > hvmin5-50 && left < hvmax5-50){
-      laser
-      .css({
-        top: top + 'px',
-        left: 48 +left + 'px'
-      })
-      .appendTo( 'body' )
-      .velocity({
-        top: '110px'
-      }, function(){
-        laser.remove();
-      });
-
-      hov5.click(function(){
-        bt5.addClass('wht')
-        setTimeout(function(){bt5.click();}, 1700);
-        setTimeout(function(){bt5.removeClass('wht');}, 2000);
-      })
     }else{
       laser
       .css({

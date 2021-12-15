@@ -72,7 +72,7 @@ body{
   height: 83vh;
   /* background: #a7a2a21c; */
   position: relative;
-  z-index: 99999;
+  z-index: 1000;
 }
 
 .wht{
