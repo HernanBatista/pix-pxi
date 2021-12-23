@@ -3,6 +3,9 @@
     font-family: Pixeled;
     src: url(../fonts/Pixeled.ttf);
 }
+.fontf{
+  font-family: 'Pixeled';
+}
 
 body {
   cursor: none !important;
@@ -45,7 +48,6 @@ body{
 
 .but2{
   width: 100%;
-  background: #282828;
   border-radius: 5px;
   padding: 13px;
   position: relative;
@@ -76,12 +78,65 @@ body{
 }
 
 .wht{
-  background-color: #fff;
+  background: #fff!important;
   color: #000;
+  transition: 1s;
 }
 
 .modal-content {
   cursor: initial!important;
+}
+
+.txt1{
+  color: black;
+  line-height: 20px;
+  font-family: 'Pixeled';
+  font-size: 14px;
+  font-variant: all-petite-caps;
+}
+
+.colt{
+  background: #ededed;
+  border-radius: 9px;
+  padding: 30px 30px;
+}
+
+.h4c{
+  margin-bottom: 26px;
+  font-size: 1.2rem;
+}
+
+.mtng-1{
+  margin-top: -53px;
+}
+.mtps-1{
+  margin-top: 20px;
+}
+
+.btncs{
+  border: 0px;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.btncs:hover{
+  background-color: #d3d3d3;
+}
+
+.pt{
+   height: 8vh;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+.pth{
+  height: 72vh;
+}
+
+.bgg{
+  background: rgba(170, 2, 2, 0.699);
 }
 
 html, body {
@@ -108,7 +163,7 @@ description {
   text-align: center;
   left: 0;
   bottom: 0;
-  z-index: 9999;
+  z-index: 1049;
   
 }
 
@@ -148,4 +203,72 @@ description {
   position: fixed;
   z-index: 9998;
   box-shadow: 0 0 0 0.5em white, 0 1em 0 0.5em white, 0 2em 0 0.5em white;
+}
+
+/* tooltip */
+
+.space-invader {
+  position: relative;
+  display: inline-block;
+}
+
+.space-invader .tooltiptext {
+  width: 120px;
+  background-color: #000000b0;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 2px 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: 14px;
+  font-size: 10px;
+  font-family: 'Pixeled';
+  font-variant-caps: all-petite-caps;
+}
+
+.space-invader .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000b0 transparent transparent transparent;
+}
+
+.space-invader:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* tooltip */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dbdbdb;;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaa;
+}
+
+@media (min-width: 576px){
+  .modal-dialog {
+      max-width: 600px;
+  }
 }

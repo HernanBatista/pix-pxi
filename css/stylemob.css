@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Pixeled;
+    src: url(../fonts/Pixeled.ttf);
+}
+.fontf{
+    font-family: 'Pixeled';
+  }
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+#video{
+	position: absolute;
+	object-fit: cover;
+}
+
+.colm{
+    flex-direction: column;
+    background: #cd0000;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 1px 2px 0px 2px #a50000;
+    margin-bottom: 7px;
+}
+
+.colm p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Pixeled';
+    font-variant: all-petite-caps;
+    margin-bottom: 0;
+    line-height: 29px;
+}
+
+.rnd{
+    width: 100%;
+    background: #bd0000;
+    height: 44px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.mob{
+    flex-direction: column;
+}
+
+.navesm{
+    background: url(../images/pix-pxi.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.logo{
+    background: url(../images/logo.png);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+/* Nave */
+.prenave{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80%;
+    transition: 1s;
+}
+body, html, .section {height:100%;}
+.wrap {height:100%; overflow:hidden;}
+body {overflow: hidden; }
+
+.nave{
+    background: url('../images/pix-pxi.png');
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+/* modal styles */
+.txt1{
+    color: black;
+    line-height: 20px;
+    font-family: 'Pixeled';
+    font-size: 14px;
+    font-variant: all-petite-caps;
+  }
+  
+  .colt{
+    background: #ededed;
+    border-radius: 9px;
+    padding: 30px 30px;
+  }
+  
+  .h4c{
+    margin-bottom: 26px;
+    font-size: 1.2rem;
+  }
+  
+  .mtng-1{
+    margin-top: -53px;
+  }
+  .mtps-1{
+    margin-top: 20px;
+  }
+  
+  .btncs{
+    border: 0px;
+    border-radius: 6px;
+    padding: 6px 12px;
+  }
+  
+  .btncs:hover{
+    background-color: #d3d3d3;
+  }
+  
+  .pt{
+     height: 8vh;
+      width: 100%;
+      background: #fff;
+      border-radius: 8px;
+      margin-top: 3px;
+  }
+  
+  .pth{
+    height: 72vh;
+  }
+  

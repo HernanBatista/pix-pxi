@@ -5,6 +5,8 @@ $(function(){
   var $win = $(window);
   
   var disable = document.getElementById( 'disable' );
+
+  var tooltip = $('.space-invader');
   
   var invader = $('#space-invader');
   var size = parseFloat(invader.css('font-size'));
@@ -21,14 +23,13 @@ $(function(){
     var sound =  new Audio(shoot.dataURI);
     sound.play();
   };
-  
+
   var shootLaser = function(){
     var laser = $('<div class="space-laser"/>');
     
     var pos = invader.position();
     var top = pos.top + parseInt( invader.css('margin-top') ) + (size * 8);
     var left = pos.left;
-
 
     var hov = $('#hov');
     var bt1 = $('#bt1');
@@ -73,10 +74,16 @@ $(function(){
         laser.remove();
       });
 
+      var cont = 0;
       hov.click(function(){
-        bt1.addClass('wht')
-        setTimeout(function(){bt1.click();}, 1700);
-        setTimeout(function(){bt1.removeClass('wht');}, 2000);
+        if(cont == 1){
+          window.location.href = 'en.html';
+        }
+        cont = 1;
+        $("#bbt").show(500);
+        bt1.addClass('wht');
+        setTimeout(function(){bt1.removeClass('wht');}, 4000);
+        setTimeout(function(){ $("#bbt").fadeOut();cont = 0;}, 6000);
       })
 
     }else if(left > hvmin2-50 && left < hvmax2-50){
@@ -181,6 +188,8 @@ $(function(){
   })
   .on( 'mousedown' , function( e ){
     shootLaser( e );
+    tooltip.fadeOut();
+
 
   })
   .on( 'mouseup' , function(){

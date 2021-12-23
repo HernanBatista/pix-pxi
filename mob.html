@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Pixeled Mobile</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+	<!-- animate -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<link rel="stylesheet" href="css/stylemob.css">
+
+
+</head>
+<body>
+	<video id="video" width="100%" height="100%" autoplay muted="" loop="">
+		<source src="video/fundo.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
+	<!-- Modal -->
+	<div class="modal fade pce" id="streamModal" tabindex="-1" aria-labelledby="streamModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-dark fontf" id="streamModalLabel">Teste</h5>
+					<button type="button" class="btnclose btncs" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+				</div>
+				<div class="modal-body">
+					<!-- Roadmap button -->
+					<div id="roadmap" hidden>
+						<div class="container">
+							<div class="row mb-3">
+								<div class="col mb-3">
+									<div class="colt">
+										<h4 class="h4 txt1 h4c">Fase 1</h4>
+										<p class="txt1">Website 1.0</p>
+										<p class="txt1">Whitepaper</p>
+										<p class="txt1">Protótipo do game</p>
+										<p class="txt1">Contrato do token</p>
+										<p class="txt1">Private Sale</p>
+									</div>
+								</div>
+								<div class="col mb-3">
+									<div class="colt">
+										<h4 class="h4 txt1 h4c">Fase 2</h4>
+										<p class="txt1">Pre Sale DXSale</p>
+										<p class="txt1">Listagem na Pancake Swap</p>
+										<p class="txt1">NFT Collection</p>
+										<p class="txt1">Marketplace</p>
+										<p class="txt1">Parcerias com Youtubers</p>
+									</div>
+								</div>
+								<div class="col mb-3">
+									<div class="colt">
+										<h4 class="h4 txt1 h4c">Fase 3</h4>
+										<p class="txt1">Website 2.0</p>
+										<p class="txt1">Versão 1.0 do jogo</p>
+										<p class="txt1">Ativação Play to earn</p>
+										<p class="txt1">Listagem CMC, Coingecko, CoinPaprika</p>
+									</div>
+								</div>
+								<div class="col mb-3">
+									<div class="colt">
+										<h4 class="h4 txt1 h4c">Fase 4</h4>
+										<p class="txt1">Torneios e eventos semanais</p>
+										<p class="txt1">Nova Coleção NFT</p>
+										<p class="txt1">Jogo 2.0</p>
+										<p class="txt1">Versão para Android e IOS</p>
+										<p class="txt1">Listagem em corretoras</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Others button -->
+					<div id="others" hidden>
+						<p style="color: #000;">Coming soon..</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<main class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col mt-4">
+					<div class="logo"></div>
+				</div>
+			</div>
+			<nav class="row align-items-center mob">
+				<div class="col-9 p-1 mt-4 animate__animated animate__bounceInDown">
+					<div class="colm" onclick="mob(0)">
+						<div class="row">
+							<div class="col-4">
+								<div class="rnd">
+									<div class="navesm"></div>
+								</div>
+							</div>
+							<div class="col-5 align-self-baseline">
+								<p>Roadmap</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-9 p-1 animate__animated animate__bounceInDown">
+					<div class="colm" onclick="mob(1)">
+						<div class="row">
+							<div class="col-4">
+								<div class="rnd">
+									<div class="navesm"></div>
+								</div>
+							</div>
+							<div class="col-5 align-self-baseline">
+								<p>Whitepaper</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-9 p-1 animate__animated animate__bounceInDown">
+					<div class="colm" onclick="mob(2)">
+						<div class="row">
+							<div class="col-4">
+								<div class="rnd">
+									<div class="navesm"></div>
+								</div>
+							</div>
+							<div class="col-5 align-self-baseline">
+								<p>Team</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-9 p-1 animate__animated animate__bounceInDown">
+					<div class="colm" onclick="mob(3)">
+						<div class="row">
+							<div class="col-4">
+								<div class="rnd">
+									<div class="navesm"></div>
+								</div>
+							</div>
+							<div class="col-5 align-self-baseline">
+								<p>Jogar</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</main>
+	<div class="prenave animate__animated animate__slideInUp animate__delay-1s">
+		<div class="nave"></div>
+	</div>
+	<div class="colx" data-bs-toggle="modal" data-bs-target="#streamModal" data-bs-whatever="ROADMAP"></div>
+	<div class="colx" data-bs-toggle="modal" data-bs-target="#streamModal" data-bs-whatever="WHITEPAPER"></div>
+	<div class="colx" data-bs-toggle="modal" data-bs-target="#streamModal" data-bs-whatever="TEAM"></div>
+	<div class="colx" data-bs-toggle="modal" data-bs-target="#streamModal" data-bs-whatever="JOGAR"></div>
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!-- <script src="plugins/particles.js/particles.js"></script>
+	<script src="plugins/particles.js/app.js"></script>	 -->
+	<script src="plugins/modalmob.js"></script>
+	<script src="plugins/mobile.js"></script>
+
+</body>
+</html>

@@ -21,15 +21,4 @@ streamModal.addEventListener('show.bs.modal', function (event) {
 		othersContent.hidden = false
 	}
 	
-	var largura = window.screen.width;
-	
-	var mobile = document.querySelector('#mob')
-	var pc = document.querySelector('#pce')
-	if(largura < 750){
-		mobile.hidden = false
-		pc.hidden = true
-	}else{
-		mobile.hidden = true
-		pc.hidden = false
-	}
 })
