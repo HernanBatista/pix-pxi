@@ -23,3 +23,7 @@ function unloadScrollBars() {
     document.body.scroll = "no"; // IE
 };
 unloadScrollBars();
+
+window.addEventListener('touchend', _ => {
+    window.scrollTo(0,0)
+});
