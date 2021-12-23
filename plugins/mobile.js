@@ -15,4 +15,11 @@ function mob(id){
         nave.style.display = 'block';
         nave.style.top = '80%';
     }, 1600);
+
 };
+
+function unloadScrollBars() {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = "no"; // IE
+};
+unloadScrollBars();

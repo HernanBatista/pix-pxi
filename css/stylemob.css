@@ -81,6 +81,23 @@ body {overflow: hidden; }
     margin: 0 auto;
 }
 
+.h-0{
+  height: 0;
+}
+
+.lg{
+  color: #fff;
+  font-family: 'Pixeled';
+  font-size: 0.7em;
+  letter-spacing: 3px;
+}
+
+.ic{
+  margin-top: -6px;
+  margin-left: -10px;
+  color: #ababab;
+}
+
 /* modal styles */
 .txt1{
     color: black;

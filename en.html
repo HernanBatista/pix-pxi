@@ -15,6 +15,14 @@
 
 </head>
 <body>
+	<!-- Mobile Redirect -->
+	<script type="text/javascript">
+
+		if (screen.width <= 699) {
+		document.location = "mob.html";
+		}
+		
+	</script>
 
 	<!-- Modal -->
 	<div class="modal fade pce" id="streamModal" tabindex="-1" aria-labelledby="streamModalLabel" aria-hidden="true">
@@ -94,7 +102,15 @@
 	</video>
 	
 	<div id="space-invader">
-		<div class="space-invader"><span class="tooltiptext">Click to shoot button</span></div>
+		<div class="space-invader">
+			<span class="tooltiptext">
+				Click to shoot button
+				<svg viewBox="0 0 50 78" width="10px" heigth="10px" fill="white" style="margin: 0px 6px;" xmlns="http://www.w3.org/2000/svg">
+					<path d="M 1.361 25.471 C 1.361 12.021 11.848 0.962 24.981 0.962 C 38.114 0.962 48.602 12.026 48.602 25.471 L 48.602 52.044 C 48.602 65.484 38.114 76.547 24.981 76.547 C 11.848 76.547 1.361 65.484 1.361 52.039 L 1.361 25.475 Z M 22.619 5.842 C 13.365 7.051 6.085 15.3 6.085 25.471 L 6.085 26.945 L 22.619 26.945 L 22.619 5.842 Z M 27.343 5.842 L 27.343 26.945 L 43.878 26.945 L 43.878 25.466 C 43.878 15.3 36.598 7.051 27.343 5.842 Z M 43.878 31.669 L 6.085 31.669 L 6.085 52.044 C 6.085 63.06 14.635 71.823 24.981 71.823 C 35.327 71.823 43.878 63.06 43.878 52.039 L 43.878 31.669 Z"/>
+					<path stroke-width="0" d="M 20.035 4.393 C 20.694 4.261 22.272 4.636 23.057 5.257 C 23.875 5.903 24.353 7.205 24.784 8.279 C 25.219 9.363 25.672 10.326 25.648 11.734 C 25.616 13.591 24.078 16.245 23.921 18.642 C 23.757 21.131 24.964 24.703 24.784 26.414 C 24.674 27.467 24.88 28.041 23.921 28.573 C 21.89 29.699 11.459 29.758 8.808 29.437 C 7.556 29.285 7.166 29.397 6.65 28.573 C 5.757 27.15 4.957 22.571 5.786 19.506 C 6.743 15.965 10.775 10.797 13.126 8.711 C 14.755 7.266 16.852 7.234 17.876 6.552 C 18.55 6.104 18.79 5.638 19.171 5.257 C 19.495 4.933 19.583 4.484 20.035 4.393 Z" style="stroke-width: 2px;"/>
+				</svg>
+			</span>
+		</div>
 	</div>
 	
 	<main class="section">

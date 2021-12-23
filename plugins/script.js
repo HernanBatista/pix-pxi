@@ -75,9 +75,14 @@ $(function(){
       });
 
       var cont = 0;
+      var lang = document.childNodes[0].nextSibling.lang
       hov.click(function(){
         if(cont == 1){
-          window.location.href = 'en.html';
+          if (lang == "en"){
+            window.location.href = 'index.html';
+          }else if(lang == "pt-br"){
+            window.location.href = 'en.html';
+          }
         }
         cont = 1;
         $("#bbt").show(500);
