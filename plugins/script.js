@@ -142,9 +142,7 @@ $(function(){
 
       hov4.click(function(){
         bt4.addClass('wht')
-        setTimeout(function(){
-          window.location.href = 'https://wingsgame.netlify.app';
-        }, 1700);
+        setTimeout(function(){bt4.click();}, 1700);
         setTimeout(function(){bt4.removeClass('wht');}, 2000);
       })
     }else if(left > hvmin5-50 && left < hvmax5-50){
@@ -162,7 +160,9 @@ $(function(){
 
       hov5.click(function(){
         bt5.addClass('wht')
-        setTimeout(function(){bt5.click();}, 1700);
+        setTimeout(function(){
+          window.location.href = 'https://wingsgame.netlify.app';
+        }, 1000);
         setTimeout(function(){bt5.removeClass('wht');}, 2000);
       })
     }else{
