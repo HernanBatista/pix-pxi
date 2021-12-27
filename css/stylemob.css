@@ -41,6 +41,14 @@ body{
     padding: 10px;
 }
 
+.p00015{
+  padding: 0 0 0 15px;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 .mob{
     flex-direction: column;
 }
